@@ -34,7 +34,7 @@ public class ProdutoService {
     {
         int i;
         Produto temp;
-        HashMap<Integer, Produto> produtos = new HashMap<Integer, Produto>();
+        ArrayList<Integer> produtos = new ArrayList();
         for(i=0;i<10;i++)
         {
             temp = pr.getProdutoById(i);

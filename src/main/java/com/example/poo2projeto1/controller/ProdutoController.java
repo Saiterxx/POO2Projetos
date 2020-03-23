@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+import java.util.ArrayList
 
 @Controller
 public class ProdutoController {
@@ -38,10 +39,9 @@ public class ProdutoController {
     }
 
     @GetMapping("/produtosEmEstoque")
-    public ModelAndView getProduto(
+    public ModelAndView getProduto2(
         ) {
-        
-        Produto produtos[]= new Produto[10];
+        ArrayList<Integer> produtos = new ArrayList();
         produtos = ps.getProdutosEmEstoque();
         ModelAndView mv = new ModelAndView("produtosEmEstoqueView");
         mv.addObject("produtos", produtos);
