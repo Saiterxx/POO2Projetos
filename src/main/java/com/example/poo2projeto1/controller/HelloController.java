@@ -15,7 +15,7 @@ public class HelloController {
     }
 
         @GetMapping("/error")
-    public String hello() {
+    public String error() {
         return "error";
     }
 
