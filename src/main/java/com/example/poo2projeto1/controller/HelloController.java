@@ -14,4 +14,9 @@ public class HelloController {
         return "helloView";
     }
 
+        @GetMapping("/error")
+    public String hello() {
+        return "error";
+    }
+
 }
